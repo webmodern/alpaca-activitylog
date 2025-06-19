@@ -1,0 +1,42 @@
+{
+    "name": "webmodern/alpaca-activitylog",
+    "description": "Spatie's laravel-activitylog wrap for Filament.",
+    "license": "MIT",
+    "keywords": [
+        "alpaca engine",
+        "activity log",
+        "filament",
+        "laravel-filament",
+        "spatie",
+        "log"
+    ],
+    "authors": [
+        {
+            "name": "Web Modern",
+            "email": "info@web-modern.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "filament/filament": "^4.0",
+        "spatie/laravel-activitylog": "^4.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "webmodern\\AlpacaActivityLog\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\webmodern\\AlpacaActivityLog\\AlpacaActivityLogServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "laravel/pint": "^1.5"
+    },
+    "scripts": {
+        "pint": "vendor/bin/pint"
+    }
+}
