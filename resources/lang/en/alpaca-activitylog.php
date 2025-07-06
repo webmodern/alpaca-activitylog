@@ -1,6 +1,18 @@
 <?php
 
 return [
+    'nav' => [
+        'group' => 'Alpaca ActivityLog',
+    ],
+
+    'activities' => [
+        'table' => [
+            'field' => 'Field name',
+            'old' => 'Old value',
+            'new' => 'New value',
+        ]
+    ],
+
     'breadcrumb' => 'History',
 
     'title' => 'History :record',

@@ -13,7 +13,8 @@ class AlpacaActivityLogServiceProvider extends PackageServiceProvider
     {
         $package
             ->name(static::$name)
-//            ->hasViews()
-            ->hasTranslations();
+            ->hasViews(static::$name)
+            ->hasTranslations()
+            ->hasConfigFile(static::$name);
     }
 }
